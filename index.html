@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Podcast Clip Sprint — 3 Clips in 24-48h</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #171717;
+        --muted: #666;
+        --line: #ddd;
+        --paper: #faf8f2;
+        --accent: #0f766e;
+        --accent-2: #b45309;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--ink);
+        background: var(--paper);
+        line-height: 1.5;
+      }
+      main {
+        width: min(920px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 48px 0;
+      }
+      .eyebrow {
+        color: var(--accent-2);
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: .08em;
+        font-size: 13px;
+      }
+      h1 {
+        margin: 10px 0 12px;
+        font-size: clamp(36px, 7vw, 76px);
+        line-height: .95;
+        letter-spacing: 0;
+      }
+      .lead {
+        max-width: 700px;
+        color: #333;
+        font-size: 20px;
+      }
+      .bar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 28px 0;
+      }
+      .pill {
+        border: 1px solid var(--line);
+        background: #fff;
+        padding: 9px 12px;
+        border-radius: 999px;
+        font-weight: 700;
+      }
+      section {
+        margin-top: 34px;
+        border-top: 1px solid var(--line);
+        padding-top: 28px;
+      }
+      h2 {
+        font-size: 24px;
+        margin: 0 0 14px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 14px;
+      }
+      .item {
+        background: #fff;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 18px;
+        min-height: 140px;
+      }
+      .item strong {
+        display: block;
+        margin-bottom: 8px;
+      }
+      .price {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        gap: 16px;
+        background: #fff;
+        border: 2px solid var(--accent);
+        border-radius: 8px;
+        padding: 22px;
+      }
+      .amount {
+        font-size: 44px;
+        font-weight: 800;
+        color: var(--accent);
+      }
+      code {
+        background: #f1eee6;
+        padding: 2px 5px;
+        border-radius: 4px;
+      }
+      .sample {
+        width: min(360px, 100%);
+        aspect-ratio: 9 / 16;
+        background: #111;
+        border-radius: 8px;
+        border: 1px solid var(--line);
+      }
+      .faq-item {
+        background: #fff;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 16px 18px;
+        margin-bottom: 12px;
+      }
+      .faq-item strong {
+        display: block;
+        margin-bottom: 6px;
+        color: var(--ink);
+      }
+      .faq-item p {
+        margin: 0;
+        color: var(--muted);
+      }
+      .process {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+      }
+      .process-step {
+        background: #fff;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 16px;
+        text-align: center;
+      }
+      .process-step .num {
+        display: inline-block;
+        width: 28px;
+        height: 28px;
+        line-height: 28px;
+        border-radius: 50%;
+        background: var(--accent);
+        color: #fff;
+        font-weight: 700;
+        font-size: 14px;
+        margin-bottom: 8px;
+      }
+      .process-step strong {
+        display: block;
+        font-size: 14px;
+        margin-bottom: 4px;
+      }
+      .process-step span {
+        font-size: 13px;
+        color: var(--muted);
+      }
+      .urgency {
+        background: #fff7ed;
+        border: 1px solid #fed7aa;
+        border-radius: 8px;
+        padding: 16px 18px;
+        margin-top: 18px;
+        font-size: 15px;
+        color: #7c2d12;
+      }
+      @media (max-width: 760px) {
+        main { padding-top: 28px; }
+        .grid, .price, .process { grid-template-columns: 1fr; }
+        .amount { font-size: 36px; }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">24-48 hour short-form editing sprint</p>
+      <h1>Turn one long video into 3 ready-to-post clips.</h1>
+      <p class="lead">Send a podcast, interview, webinar, lesson, or YouTube link. Get three vertical clips with clean cuts, captions guidance, hooks, titles, and posting copy.</p>
+
+      <div class="bar" aria-label="Offer highlights">
+        <span class="pill">3 clips</span>
+        <span class="pill">USD 19 starter price</span>
+        <span class="pill">PayPal accepted</span>
+        <span class="pill">Creator and agency friendly</span>
+      </div>
+
+      <section>
+        <h2>How It Works</h2>
+        <div class="process">
+          <div class="process-step">
+            <div class="num">1</div>
+            <strong>Pay</strong>
+            <span>Send $19 via PayPal</span>
+          </div>
+          <div class="process-step">
+            <div class="num">2</div>
+            <strong>Send Link</strong>
+            <span>Share video URL or file</span>
+          </div>
+          <div class="process-step">
+            <div class="num">3</div>
+            <strong>Receive</strong>
+            <span>Get 3 clips in 24-48h</span>
+          </div>
+          <div class="process-step">
+            <div class="num">4</div>
+            <strong>Post</strong>
+            <span>Upload with hooks &amp; copy</span>
+          </div>
+        </div>
+        <div class="urgency">
+          <strong>Limited starter slots:</strong> This $19 rate is for first-time clients only. It covers my time to prove the quality. If you like the clips, we can talk repeat batches at a regular rate.
+        </div>
+      </section>
+
+      <section>
+        <h2>What You Receive</h2>
+        <div class="grid">
+          <div class="item"><strong>Edited clips</strong>Three 30-60 second vertical clips selected for hooks, clarity, and social readability. 9:16 format, clean cuts.</div>
+          <div class="item"><strong>Titles and hooks</strong>Three headline options written for YouTube Shorts, Reels, TikTok, or LinkedIn. Designed to stop the scroll.</div>
+          <div class="item"><strong>Posting copy</strong>Short caption drafts and suggested calls to action for each clip. Copy-paste ready.</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Starter Sprint</h2>
+        <div class="price">
+          <div>
+            <p><strong>First order:</strong> USD 19 for 3 clips.</p>
+            <p>Pay with PayPal to <code>pandacute151793@gmail.com</code>. Send the video link or file after payment.</p>
+            <p style="margin-top:10px;color:var(--muted);font-size:14px;">One round of minor revisions included. Turnaround: 24-48 hours from receiving source + payment.</p>
+          </div>
+          <div class="amount">$19</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Best Fit</h2>
+        <p>Podcasts, founder interviews, coaching calls, webinars, course videos, expert Q&A, and talking-head YouTube videos. The best source videos have clear speech and at least 10 minutes of usable conversation.</p>
+      </section>
+
+      <section>
+        <h2>FAQ</h2>
+        <div class="faq-item">
+          <strong>Why is it only $19?</strong>
+          <p>This is a starter sprint to prove quality. If you like the clips, we can discuss a regular rate for repeat batches. The goal is to build a working relationship, not to stay at $19 forever.</p>
+        </div>
+        <div class="faq-item">
+          <strong>What do you need from me?</strong>
+          <p>A YouTube link or raw video file. Optional: your brand colors, caption style preference, platform focus (Shorts/Reels/TikTok), and anything to avoid.</p>
+        </div>
+        <div class="faq-item">
+          <strong>Do you add captions/subtitles?</strong>
+          <p>I provide caption guidance and text overlays in the clips. Full burned-in subtitles with word-by-word highlighting are available on request for repeat clients.</p>
+        </div>
+        <div class="faq-item">
+          <strong>What if I don’t like the clips?</strong>
+          <p>One round of minor revisions is included. If the style fundamentally doesn’t work, I’ll learn from the feedback and adjust for the next batch.</p>
+        </div>
+        <div class="faq-item">
+          <strong>Can agencies use this?</strong>
+          <p>Yes. I can handle overflow work when your internal pipeline is busy. The $19 test lets you evaluate quality before routing client work to me.</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
